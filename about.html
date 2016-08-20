@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="keywords" content="HTML5 Template" />
+	<meta name="description" content="Listingpro - Template HTML5">
+	<meta name="author" content="">
+	
+	<!-- Title -->
+	<title>Listingpro - Home</title>
+	
+	<!-- Mobile Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	
+	<!-- CSS -->
+	<link href="lib/bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet" />
+	<link href="css/colors.css" type="text/css" rel="stylesheet" />
+	<link href="css/font.css" type="text/css" rel="stylesheet" />
+	<link href="lib/jQuery.filer-master/css/jquery.filer.css" type="text/css" rel="stylesheet" />
+	<link href="lib/jQuery.filer-master/css/themes/jquery.filer-dragdropbox-theme.css" type="text/css" rel="stylesheet" />
+	<link href="lib/popup/css/component.css" type="text/css" rel="stylesheet" />
+	<link href="lib/icon8/styles.min.css" type="text/css" rel="stylesheet" />
+	<link type="text/css" rel="stylesheet" href="lib/jquerym.menu/css/jquery.mmenu.all.css" />
+	<link href="lib/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+	<link href="lib/Magnific-Popup-master/magnific-popup.css" type="text/css" rel="stylesheet" />
+	<link href='css/mapbox.css' rel='stylesheet' />
+	<link href='lib/chosen/chosen.css' rel='stylesheet' />
+	<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css' rel='stylesheet' />
+	<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css' rel='stylesheet' />
+	<link href="css/main.css" type="text/css" rel="stylesheet" />
+
+	<!-- IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body  data-userimg="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAEGUlEQVRoge1ZLWwcRxQ+cMCVItXAIKDgQKQaGBQYtFLBm4mBgYFBQSoZGBgYGAQYFBhYOhAQYBBgqa204G7fWGdg4EqWUrCwqgpcqYoiy975xnKlAIMDAQYGWzAzd6vmfnb39rxX1Z+07L2n7828N+9na7VHPOK/A2IsEusNCuN9qRBIhUMK9S4x1inAXNX8RoKiqE5tbAuF3wQjGfGd09HVUtV8B4I6754IxlmfrLlxt7BHITYp1DtSmTdCmUsncyeVeU2Mxaq590AB5gSbv7wD1I7XKIrqA2WjqC7Z/JS+IanMm2HyDwqpzGvnxB/UwdNx8hRFdVLxslSmKdjcWmcQPATX4aQUGoLNvWBzXyTuibEoGF3BSCjEV9PgmI1IG9suPI4L2wjjfcFIJEOVyS0XJOPEneZmURt0dLXk8gUlUssHwYgEI6EWaEI7iWAkJdEqQMA9p6TQmMhO5Y64Z3eSRKUA8zPgiP7FJer3hW209JeCkQhl/i6TWy744kaMH4raoDa+9q1LmdzykQj1riuGPxa1IZXZdbd6UCa3XKCj6zVH4m1hG6yPBSN5ztcbZXLLSQKrLiy6xfQvFmxngITCeKVsfpnhO14K9V4RfdtE4pW71ZOy+WWGYLwXjGSS+YJaIHerUZncckEqc2xfLV04vinE5qT92sQg1hu+T6JQ7+bWD/WeYGDSw5gYFEV1qcypK2iXefV9Cy8YZ5UPV990bj4TjD/tqcbfZtUT6vq5c+L3afLLBakQuDhvZtcxTTcdHk6TWy6kXp4uBZgfK28bxW4ZI0Dp8LOJVOZ0VLy72nFS+ZM7DNSO11KbkVPii4VPZALMp5xISMXLVXAdCbfbukvttm6J9RYpNEihQay3BJub9O6ras5D4WuCr/gDv/6SrroZfRx6DSBfLBDrDRtG5sbtr86ojW1qXT2baUdS25C7kXIdPPVyM7UyrdVqNVLxsg+nLAOSZNPyITgTCU9HV0u2GNqQco68Gqtneyyf9PdSIXjwTaP9faC/6/VYnozNB7s+DfFiqH4Yr3g5ezP9QxCMMwrxYqr/UCjAHDFe+sWzr+SScUCtq2e1Wr/t6G3Z2/GaTfyLBWKsSsZBr4a4YYwUGm4R3hXppzuM97N0CfmcsO36h5QD7ynUO9R59+QT2VDvCDYfhz6/NslfDjyoNrb7vyhcyzNANr8DUVSXCocpw+fEWB/vOBalMk0bfuZWsLmVypxKZZpZpklirAvGeT/vTGvQoWVGPw/MR2K9VdhQQdhI6N1uVGhm8SOoYMDnQBVwBRQur/JNodS+/KLXZjNWp8QxO5/+mHCXa2Huf+AINr9Oj14++DDPlfxCmZ9zK00ZMjQ7bknRyqz0r6d21r4PmZxI/6+Y1W+lE39e9GYf8Yj/K/4BSKKZsGt5SOsAAAAASUVORK5CYII=" data-userlink ="login.html">
+	<div id="page">
+	<!--==================================Header Open=================================-->
+	<header class="">
+		<div class="lp-topbar">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-sm-8 text-left">
+						<ul class="lp-topbar-menu">
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="about.html">About</a>
+							</li>
+							<li>
+								<a href="contact.html">Contact</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4 col-sm-4 text-right">
+						<div class="lp-join-now">
+							<span>
+								<!-- Contacts icon by Icons8 -->
+								<img class="icon icons8-Contacts" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAADNElEQVRoge2ZLWhbURTHn3iig8IiIiomIgqrqJiomJgIrCKiomKig4iKioiKioiJiEJExURFRGEbRERMVERkENhE5BgTGUxEVERkUBERURFR8Zu45+5durzk3feRm7H8IRB455z3u9/3nOd5a6317wjYAcrAOdAEroAqcAhsuOabK8AHKsBX5qsP7LrmnSlgE+gasCMZhRpwDJwCDeBGnk+Bt8COa/Y/AjaAn0YDDgA/xNYH3j8YoUaY/VIlPQvwHdiKYO8De0AdGItvcxms86AKwL38rOe9bAoTacyzLBijglQE4jpBjHOJ8TFNNluItkAcJ4ixKzGGKaJZQ/QEopgwDgApYcUC0NtpIWEc5w3R227shQrkVqEhn4ThdYIYTyXGrzTZbCH04fYmQYznEqOfJpstRFUg3qUQ4zJNNluIA4H4nCDGtcQop8lmC1ESiElM/7zcCgD20+azAdE33lpMfx+4kBjttPlsQAYCETu/AIoSo5cmmy1E4vmNylcgwX0tsVDpLMAQqMbwr4mv88XuAx0BuYnhr6/wXVwnV8Aj4IcAvbDweyk+37LksxKqUgJQt/Cpi89VlmxWMnaeCZCLYJ8zplVxCYjRRZCbdObNd1lXOiFzt+WGieC6ohuTn2GTMxoBsOeCda5Qta2pATkGTlAFioL8HxnPR66ZQ2WcCQPCpbNKdzn6IhFcAPOow7ItozBGnRUVYHulG0JQDZkusNvSdqxSydTzPA9VOdTTaWGCBLSMKeh+wcsoNI0pBXARwa9m2N9LjOVWGlHnwCuCO5aGaROUT4/m+O8bdq0HndAFjsjyGwqq6n5GUHgGdTpfAttiUzeeNVBnS15+JbHVqolPAVUInxjPxqhS6sJbgm0jysCt8aIB6pvH5gzbU+COcE2Bs5COqhDUynRH/WUbpwE+6oONVh84jOC3I6PTkd4dy/86EbJJ1Ce6vvHe1qxOs2mIXgd3wEnsQPHfXzZGt0ecnIUgBR0ia8CFUAfoUFjsslDgCcHiK2XEaMOj04QpNgVzgg84X7LDs5MxzaMvfuCDtVPGQu2GAC0bJ3OrXTXdRm1EbmEo93ocd2TXWut/1W9KptrZf/2YyAAAAABJRU5ErkJggg==" alt="join-now">
+							</span>
+							<a class=" md-trigger" data-modal="modal-3">Join Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- ../topbar -->
+		
+		<!-- Login Popup -->
+		<div class="md-modal md-effect-3" id="modal-3">
+			<div class="login-form-popup lp-border-radius-8">
+				<div class="siginincontainer">
+					<h1 class="text-center">Sign in</h1>
+					<form class="form-horizontal margin-top-30"  method="post">
+						<div class="form-group">
+							<label for="username">Username or Email Address *</label>
+							<input type="text" class="form-control" id="username" />
+						</div>
+						<div class="form-group">
+							<label for="password">Password *</label>
+							<input type="password" class="form-control" id="password" />
+						</div>
+						<div class="form-group">
+							<div class="checkbox pad-bottom-10">
+								<input id="check1" type="checkbox" name="price-on-call" value="price-on-call">
+								<label for="check1">Keep me signed in</label>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<input type="submit" value="Sign in" class="lp-secondary-btn width-full btn-first-hover" /> 
+						</div>
+					</form>	
+					<div class="pop-form-bottom">
+						<div class="bottom-links">
+							<a  class="signUpClick">Not a member? Sign up</a>
+							<a  class="forgetPasswordClick pull-right" >Forgot Password</a>
+						</div>
+						<p class="margin-top-15">Connect with your Social Network</p>
+						<ul class="social-login list-style-none">
+							<li><button id="logingoogle" class="google flaticon-googleplus" ><i class="fa fa-google-plus"></i><span>Google</span></button></li>
+							<li><button id="loginfacebook" class="facebook flaticon-facebook" ><i class="fa fa-facebook"></i><span>Facebook</span></button></li>
+							<li><button id="logintwitter" class="twitter flaticon-twitter" ><i class="fa fa-twitter"></i><span>Twitter</span></button></li>
+						</ul>
+					</div>
+				<a class="md-close"><i class="fa fa-close"></i></a>
+				</div>
+				<div class="siginupcontainer">
+					<h1 class="text-center">Sign Up</h1>
+					<form class="form-horizontal margin-top-30"  method="post">
+						<div class="form-group">
+							<label for="username">Username *</label>
+							<input type="text" class="form-control" id="username2" />
+						</div>
+						<div class="form-group">
+							<label for="password">Email Address *</label>
+							<input type="email" class="form-control" id="password2" />
+						</div>
+						<div class="form-group">
+							<p>A password will be e-mailed to you.</p>
+						</div>
+						<div class="form-group">
+							<input type="submit" value="Register" class="lp-secondary-btn width-full btn-first-hover" /> 
+						</div>
+					</form>	
+					<div class="pop-form-bottom">
+						<div class="bottom-links">
+							<a class="signInClick" >Already have an account? Sign in</a>
+							<a class="forgetPasswordClick pull-right" >Forgot Password</a>
+						</div>
+						<p class="margin-top-15">Connect with your Social Network</p>
+						<ul class="social-login list-style-none">
+							<li><button id="logingoogle2" class="google flaticon-googleplus" ><i class="fa fa-google-plus"></i><span>Google</span></button></li>
+							<li><button id="loginfacebook2" class="facebook flaticon-facebook" ><i class="fa fa-facebook"></i><span>Facebook</span></button></li>
+							<li><button id="logintwitter2" class="twitter flaticon-twitter" ><i class="fa fa-twitter"></i><span>Twitter</span></button></li>
+						</ul>
+					</div>
+				<a class="md-close"><i class="fa fa-close"></i></a>
+				</div>
+				<div class="forgetpasswordcontainer">
+					<h1 class="text-center">Forgotten Password</h1>
+					<form class="form-horizontal margin-top-30"  method="post">
+						<div class="form-group">
+							<label for="password">Email Address *</label>
+							<input type="email" class="form-control" id="email2" />
+						</div>
+						<div class="form-group">
+							<input type="submit" value="Get New Password" class="lp-secondary-btn width-full btn-first-hover" /> 
+						</div>
+					</form>	
+					<div class="pop-form-bottom">
+						<div class="bottom-links">
+							<a class="cancelClick" >Cancel</a>
+						</div>
+					</div>
+				<a class="md-close"><i class="fa fa-close"></i></a>
+				</div>
+			</div>	
+		</div>
+		<!-- ../Login Popup -->
+		
+		<!-- Popup Open -->
+		<div class="md-modal md-effect-3" id="modal-2">
+			<div class="container">
+				<div class="md-content ">
+					<div class="row popup-inner-left-padding ">
+						<div class="col-md-6 lp-insert-data">
+						</div>
+						<div class="col-md-6">
+							<div id="quickmap"></div>
+							<a class="md-close widget-map-click"><i class="fa fa-close"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Popup Close -->
+		<div class="md-overlay"></div> <!-- Overlay for Popup -->
+		<div class="lp-menu-bar  lp-menu-bar-color">
+			<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-xs-6 lp-logo-container">
+							<div class="lp-logo">
+								<a href="index.html">
+									<img src="images/logo.png" alt="" />
+								</a>
+							</div>
+						</div>
+						<div class="col-xs-6 mobile-nav-icon">
+							<a href="#menu" class="nav-icon">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</a>
+						</div>
+							<div id="menu">
+								<ul>
+									<li><a href="#">Categories </a>
+										<ul class="sub-menu">
+											<li class="has-menu"><a href="listing.html">Food </a>
+												<ul class="sub-menu">
+													<li><a href="listing.html">Restaurents </a></li>
+													<li><a href="listing.html">Cafe </a></li>
+													<li><a href="listing.html">Bars</a></li>
+												</ul>
+											</li>
+											<li><a href="listing.html">Beauty & Spas </a></li>
+											<li><a href="listing.html">Real Estate </a></li>
+											<li><a href="listing.html">Automotive </a></li>
+										</ul>
+									</li>
+									<li><a href="#">Pages</a>
+										<ul class="sub-menu">
+											<li><a href="listing.html">Listing </a></li>
+											<li><a href="listing-sidebar.html">Listing - Sidebar </a></li>
+											<li><a href="listing-map.html">Listing - Map </a></li>
+											<li><a href="author.html">Author </a></li>
+											<li><a href="post-detail.html">Post Detail </a></li>
+											<li><a href="post-submit.html">Post Submit </a></li>
+											<li><a href="login.html">Join Us</a></li><li><a href="index-1.html">Home 2</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Blog</a>
+										<ul class="sub-menu">
+											<li><a href="blog-archive.html">Blog </a></li>
+											<li><a href="blog-detail.html">Blog Detail </a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Elements</a>
+											<ul class="sub-menu">
+											<li><a href="pricing.html">Pricing </a></li>
+											<li><a href="404.html">404 Page </a></li>
+											<li><a href="testimonials.html">Testimonials </a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						<div class="col-md-8 col-xs-12 lp-menu-container">
+							<div class="pull-right lp-add-listing-btn">
+								<ul>
+									<li><a href="post-submit.html"><i class="fa fa-plus"></i> Add Listing</a></li>
+								</ul>
+							</div>
+							<div class="lp-menu pull-right menu">
+								<ul>
+									<li><a href="#">Categories <i class="icons8-angle-down drop-down-icon"></i></a>
+										<ul class="sub-menu">
+											<li class="has-menu"><a href="listing.html">Food </a>
+												<ul class="sub-menu">
+													<li><a href="listing.html">Restaurents </a></li>
+													<li><a href="listing.html">Cafe </a></li>
+													<li><a href="listing.html">Bars</a></li>
+												</ul>
+											</li>
+											<li><a href="listing.html">Beauty & Spas </a></li>
+											<li><a href="listing.html">Real Estate </a></li>
+											<li><a href="listing.html">Automotive </a></li>
+										</ul>
+									</li>
+									<li><a href="#">Pages <i class="icons8-angle-down drop-down-icon"></i></a>
+										<ul class="sub-menu">
+											<li><a href="listing.html">Listing </a></li>
+											<li><a href="listing-sidebar.html">Listing - Sidebar </a></li>
+											<li><a href="listing-map.html">Listing - Map </a></li>
+											<li><a href="author.html">Author </a></li>
+											<li><a href="post-detail.html">Post Detail </a></li>
+											<li><a href="post-submit.html">Post Submit </a></li>
+											<li><a href="login.html">Join Us</a></li><li><a href="index-1.html">Home 2</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Blog <i class="icons8-angle-down drop-down-icon"></i></a>
+										<ul class="sub-menu">
+											<li><a href="blog-archive.html">Blog </a></li>
+											<li><a href="blog-detail.html">Blog Detail </a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Elements <i class="icons8-angle-down drop-down-icon"></i></a>
+											<ul class="sub-menu">
+											<li><a href="pricing.html">Pricing </a></li>
+											<li><a href="404.html">404 Page </a></li>
+											<li><a href="testimonials.html">Testimonials </a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div><!-- ../menu-bar -->
+		<div class="about-page-heading about-page">
+			<div class="page-heading-inner-container text-center">
+				<h1>About</h1>
+				<ul class="breadcrumbs">
+					<li><a href="index.html">Home</a></li>
+					<li><span>About</span></li>
+				</ul>
+			</div>
+			<div class="page-header-overlay"></div>
+		</div><!-- ../Home Search Container -->
+	</header>
+	<!--==================================Header Close=================================-->
+	
+	<!--==================================Section Open=================================-->
+	<section>
+		<div class="about-box-container aliceblue">
+			<div class="container  lp-section-content-container clearfix">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 about-box text-center">
+						<div class="about-box-inner lp-border-radius-5 lp-border">
+							<div class="about-box-slide">
+								<div class="about-box-icon">
+									<!-- Inspection icon by Icons8 -->
+									<img class="icon icons8-Inspection" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACgElEQVRoQ+1a0XHVMBDcrQA6IFQQqADogFQAVECoAFIBUAGPCkgqgFQAVEBSAVDBMsvIM86zbJ+t2C+ekf7es06+vduT7s4iCoek7wAeFS5zTvKkZA2WCFtWkkrXsDzJIl16hSW9B/AcwFFE0bmKTDDEFYAdybOcPlkgkj4AeB0B0MxZAUjzqjOS7/Z16wPyG8B9AI9J/hgC1Fi0FMiYvCTHoePxiuTDKJD/vB9bvB0jkbk5g0wxxNDcPo/cABLhcSmQIa83a1cgEUtEvBXZNHIe3ffArXmk52XfADyJKDsw54Kkt/obY1UghQAGxSuQxjxTLFE9ErDAFINOOkfmnhUBnbNTKpAaI3O5MyK3KWpJOiLpWqMztgbEqbnHyT6gzQCR5ALpLYCfJDt1/yaAtAole+MZSeds28u1Wt2XjyRPNxkjkqy4mxvXbiWR/LM5IN6lUu3tnkCWUnPOs9VTFElfATwF8Jnky6GjZPVgl2TrulmRpUjLwlb8E4C/7pcF5md7B7mcr9gjCYSt3Ow+fXw32F+pzeQz43wsIVjVIwmIt85jAAZh3nd6YZK+pM5ltqy9E8E+BkaS63EDCVHqoMGewLjV+iJ55g3JXfq/oZT/85zQWJVamdN4l8D40av0ycF95EuS3q3C46BArGUrh2qUNqV88GWz3D5kBweSwDRbrX9OotRBY6Rn1zGY01xmG+HXnfBIRNGxORXIHG6OWbXkefVI9UgJfwZkK7UqtbZGrYX0HV028i1zUoU4+saFJtwakIX0m7zsnK+6LlnvRa5wTNZmpkCrM3lNsnPRp49aTU925msXFYtfqmkVR07DHyyqVnxxdyV9zalzM8hL/AMDhk9gHow7uAAAAABJRU5ErkJggg==" alt="Inspection" />
+								</div>
+								<div class="about-box-title clearfix">
+									<h4>PLANNING</h4>
+								</div>
+								<div class="about-box-description">
+									<p class="paragraph-small">
+										Sed ut perspiciatis unde omnis iste natus error sit v oluptatem accusantium or sit v oluptatem accusantiumor sit v oluptatem .
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 about-box text-center">
+						<div class="about-box-inner lp-border-radius-5 lp-border">
+							<div class="about-box-icon">
+								<!-- Rocket icon by Icons8 -->
+								<img class="icon icons8-Rocket" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAE70lEQVRoQ92ajXHUQAyFpQqACoAKgAoIFQAVECoAKiCpAKgAUgGhAkgFQAWECoAKxHwe6Ua3Xttr3/kS2JmbJGN7b59+np7kqPwnS/8FHGZ2R0Tuich9/9xMP0VZ1xWImT0TkSP/AGRwXTsgZsbBAfBERLB6rD8i8kVEvvnnt3vkjYj8UdWb18Ijbv2Xfrg4/HcR+SAi56p6WbrDQX8WkQtVPbpSIH4YrErss7D8WwDUDp/BmNmxiLwXkU+q+uRKgJgZYfNaRPBCAHipqnigaZnZie9xqqonBwdiZlgfS4YX3onIiaoS983LzMiZhyLyVFXPDwrEQRDXeOQnSa2qJPDsZWa/fJ9bGOFgQAoQJPLRXC8EWt/rK8ZQ1Y6aDwKkAHGmqiTq4mVm5BYk8U5VuzxbHcgYCGctkp76wTr3wxH/g8vM8AY51uXH6kBcWvCl5MSWJxLr1A7cMVHtgu/5Iwph3LOaR5xiSWws1xWtFOP8zjXqBgcO2iXk+PuGiDxS1Z5nkgG2DLMKkAJEL7ETdb5SVQrgZqX47wpd6ZXEVg8y460FhDqBdaHY+yU7mZn5ATvqLIDAQoROp2qLa1HNtzy8So6YGRZ+4WEDxfbqxBIg7mUAkm+bJF8lR5L+Yf9qjHPBzGCaxyLSHFrJQD1v7NUjqUix7/Mx3ZSUK2FFcp+5ZZHwkTMbQxR7b+XGXj1S0OymSE3UghB9o/TrIQWFkzuDe48me8E+Y+eKa1WmGXrQPUNlJsxYn/BIpt1U/L6ragjN3pZTQD56t9YCYif9NFD8gv2oN7Bfr8GaDK2CfaqbtNzTYoEGEFX2y89VPVKwTzW5WhlqCRAzy56YBFFlrRb2KYTgKEPNAVLkJOHUBKIHpIV9ChbZWZIH0F1A1ICEPA5+p/hsVWYzQ+wh+kZZZKYnYKPoHBeRRqllODQTvbxgClQoHwAMaqg5h0+eQBiSE0iPC29/Z/XvYzkSEz5+IqnzmhW7Y+AKwtgpTCfVryc2RQv5wNpLcidmYs/BRqrVy5NA2Cj1D03yY8ILhBCFFm/j3VnzrKG9W4EECfTUaqvF3CB5prW3EK3mSHmwIo5JwrtLxjiuq/BEDKd7TdUco5T3TmktvjSaGSxI4jNUfjrnS82MRmurpd33K40pICG1oUVoF3oGDEPm5y1giqRmPAqoXhvbstfYPVNAorfu9FZqiCbZq1Kpu6SONvfQHokCuUnyImeqnhmb8V4VEKouCcraqOACDP03taWrxsW12iio8/JBPOIWfayqp6nn4KD00Z328jADBDkT2gx6jblutVIfxCOufpnFxmG6sYuZMQmkspdg6KNjJFrmYlUBrA7EzACQ561bsiGB4cBIFpiMiXiMQgkjgCIyAd3zSJrbrhNaaUzJIRnN8Aap9gIyhm/Z+lsyIzVml6p6N24s34+MDRKWULE6TfL2h9Wb4KWD8HaJMIMA8Bxy/9SnHuXYk7/JHVTAZUEATEqOl6iD0ToyNTT2xI7C2CQa8yRRRG6nl55Nzy/1SIwvh5Izy5TBMWj+8mQcPBPaai/yfwgkoRVvR4feR0ReVGeutY2LAcZeVe4YkHg72gOyy8jHzKLXJ7cGB2tLwqj2DB4JPYUIDKVLYSOpY0S5cwe3rwOPeSSA1O7pXo2Vb5XWPtSS/bNHeJ4ix4r/wqH3mD3RWHKQXZ/5C8V3y1F/Ng2NAAAAAElFTkSuQmCC" alt="PASSION">
+							</div>
+							<div class="about-box-title clearfix">
+								<h4>PASSION</h4>
+							</div>
+							<div class="about-box-description">
+								<p class="paragraph-small">
+									Sed ut perspiciatis unde omnis iste natus error sit v oluptatem accusantium or sit v oluptatem accusantiumor sit v oluptatem .
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 about-box text-center">
+						<div class="about-box-inner lp-border-radius-5 lp-border">
+							<div class="about-box-icon">
+								<!-- Hearts icon by Icons8 -->
+								<img class="icon icons8-Hearts" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAADpUlEQVRoQ+2YjXEUMQyFpQqACkgqACogVECoAFIBSQWECkgqgFQQqACogFABSQVABWK+G5nxbdY/6/VyTGY1c3M3t7aspydLWqncEdE7gkNWIP8bkysjKyMLeWANrYUc26x2MiNm9lxEDkVkT0QO/ORrEeHzRUQuVJXfSTEz9r70/fzmg7CfvR9V9dMUVNVAzIyDT6NDc+dg0NEQkAN4HzkgpwNAp6p6UQOoCMTM7ovIOxF55QpvRORMRK5UFYPFDcSrrIGteyLyS0ROVPWDr+EZetD3G6+LCM+uA2Azg+HHInIsIg/9PNagB31JyQJxEJ9dOYcfB8NSGn0PzL32NUf+DRPIuXs6a5iZARyH4ZQrEXmWA1MCwuEo/M63qqKwStyQYHzYQ7htGKoRM4Md1j/iW1WDU25tTwKJDIGJgykgwikDMJNARDoAQwjDTFJHDsgPv9hNBkSGEB6iqsR9k0QO4T7tjykZBWJmXNhLEblR1ZAaW43gcgMkeydKys2MLEYCeKGqJIotSQEhLkm3ZIuNR3ctZgajZD3qVMigf81KASEmn3qm2KTYXYunZjLoV1UNhbgIxDwcinXmXwI0s6RdKUZWIEsy1MIIhY8i9KSlfiwBpvWOhKw1q4b0BNSatbKprqeBtbrMLFsSUpedIkhlRx7MLWa1xqbWeSP605/vj73v5FqUUEveqird7M7EzDj/TaqGbEpFxgsUHQoQrQVemNVitHrB2SA6aHVo5UcLdKmND6ycz2n6WkGwz8xokXi3Ga3oQXcJCC30N1+c9MYcQ3N7o5TLsmwpKLYgUXwSWijLDhZ6gfLXZ5xISBXvaRGI0xtCrPjK2QPI4BU7G1JVoRUWuWLAUO0XBTMAwSs2b6fFRFPFiLNCbQFE1TCghZmRYcdeDYhs+h0zZDAMwEskgOqBROFik1hI99wJmDicch+rGUmE2dbsqoUFZzueeVWHU3zeZCB+MF6j92F8ipyp6kkLEDPj9TUMJpgqMjsr3onhWU1AInZCc8lfhBjdclWoeZgy9yKkkFnzgVlAnB1aGdhhwoEnmdcyTUyKmVGp6Z9glhEsw79Zs4HZQBKhVjvEZuIOiMmh1DW0hsp8HgY7YYhNqG1mUP6MUApDbADcmk+13LPJ6bfmEK8FW4nAjQ+zqG4szM5alYBIBNwD2EGqpvk1usfWdLkjqcOjAsqSSdP8qYAWBRIlgtmz3xKwxYGUDOj1fAXSy5O99KyM9PJkLz1/AOAWmEIQ8JAtAAAAAElFTkSuQmCC" alt="heart">
+							</div>
+							<div class="about-box-title clearfix">
+								<h4>CARING</h4>
+							</div>
+							<div class="about-box-description">
+								<p class="paragraph-small">
+									Sed ut perspiciatis unde omnis iste natus error sit v oluptatem accusantium or sit v oluptatem accusantiumor sit v oluptatem .
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 about-box text-center">
+						<div class="about-box-inner lp-border-radius-5 lp-border">
+							<div class="about-box-icon">
+								<!-- Customer Support Filled icon by Icons8 -->
+								<img class="icon icons8-Customer-Support-Filled" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAEL0lEQVRoQ+1ajVEWMRDdV4FSgVKBHxUIFQgViBWIFYgVCBUIFQgVCBUoFQgVCBWs8zKbz1y+3OXyc8o47Azj4F02edm/t3tAGkVVX4vIroi85A+AvZRKVf0mIj9E5Jb/Arhu3HqwHDXKVJUHfysi+yLyPNQBIKlTVTXa615ELvgD4LLmHIN9SxQYgI9mgeTSAiDhelrpAwACq5JZFlFV3voXs8DkRpVAvM4rA0QXLJIsEFVdichXi4Gs8kYg1E+XOwBAULNlEoiBYJAO4mBKewcgXv07AGdzkYwCqQHBTTsCobodALPcbCzD0ALf57pTZdaac9l0M4JhMpiOzdRTVT0Rkfe5xannnS3CLa7GatPgAuPDWIplXFTJAkB4jr1c8G+4llVgFrwqWQhI1ioDIKpKmvGzCoEtWghINvBjINWx4cEvCOQUwNHYJcdAaA1apVoWBHILYDsLxOoGU26TLAhkMujXFlFVmu1zE4r+BTE+Dokl3X9DQiCkA6TmTbKwRc4BHOaAkKSxSWqROwDJGFNVVucXLcqtIdvJAWkN9E8AjqcOqqp8zn6mRbZTlCV0rbiDK9lszVRVle7JeCP9p5D0nQA45y+qStdgb1Mr7CgP4sU9gLgAtOaL1MYDiPciIFKN+w6JZYOytAJZx4SqMnUTxJ1ZxNNv/h8zDeODQwfn440xs9bjbysEQsr8rNDezqWCGyaIFW891GPWIjCC8WtaXWyQikMgNVnLmTiwBlvUC2PQPg54cL7DiQtbZnebrSzbWmIGvru0EAgnGG8KLbJlPu8Thf89zICOWoSElLXGrPSrcL/49TX/aqrsvvgFMysPJHRTF0cxEIuTlkzpQbl2OATCHqS0oXJKVJX+/8qmH961/ODgMHKtGwCrXtxORFy1j9lvacD71Ot5Gqs3waWC3c8A4gTR6F1yD2CrtR9ZU+vAKgRDYDd2QlqK6ZfUxVnD3KqVSfgLuASw36NDDAsiMx8PnhIC27Xk0Jp6vf4H0/knRvwTVa1Jw+v5k1EQWsQDIgBSlMGwrQPvIuU59rwrNXyo7duPAJxOObyquhGTf88Cnmm/hBUPAGxU9qgS17JUxgfj4dpPCC3tsj7RSp7i0+oM+lurJ9xv1hxtrN+ZmjR6StGaVcbWM7MRjPuUYNbhRXDKyRhK0v0iIKa4V0DmLoJACChO2UmvKAZiYHyhyx2m9bljBJF7J2O1FsjfssriQOiv9NtSel9qoY02eSQ9PwBIfquZ88WqhhWXAuH7jAnXDts0J9X/Mxsm59JzgHSZd9UgS6zJz7XGNurQAHXCIKQj/I4/SAqTBTHKHiR5zaPUDmgmvylmXcvScI8GqAXL6IRxtkX+MRC6Ezlc9uvuY7EI/y6FBZDkkZMYpnxmy7OxmIjN+yiAjFXrEl98AlJyW7l3nywS3NB/41q/AQX0N1EALwUWAAAAAElFTkSuQmCC" alt="supportive">
+							</div>
+							<div class="about-box-title clearfix">
+								<h4>SUPPORTIVE</h4>
+							</div>
+							<div class="about-box-description">
+								<p class="paragraph-small">
+									Sed ut perspiciatis unde omnis iste natus error sit v oluptatem accusantium or sit v oluptatem accusantiumor sit v oluptatem .
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="lp-section-row page-container-six">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="">
+							<Div class="lp-about-section-best-header">
+								<h3 class="margin-top-0">Find your Best </h3>
+								<p>find your interests any where any time with Listingpro App</p>
+							</div>
+							<div class="lp-about-section-best-description margin-top-45 ">
+								<p class="paragraph-small">
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa ntium dolore mque laud antium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi  natus error sit olore mque laud anti
+arc hitecto beatae vitae dicta sunt explicabo mque laud anti arc hitecto beatae vitae dicta sunt explicabo mque laud anti arc hitecto beatae vitae dicta sunt explicabo. 
+
+								</p>
+								<ul class="nearby-download nearby-download-about nearby-download-top">
+										<li>
+											<a href="#">
+												<img alt="apple-icon" src="images/apple-icon.png">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img alt="google-play-icon" src="images/google-play-icon.png">
+											</a>
+										</li>
+									</ul>
+							</div>
+						</div><!-- ../section-content-container-->
+					</div>
+					<div class="col-md-6">
+						<div class="">
+							<img src="images/about-img-2.png" alt="about-img-2" />
+						</div><!-- ../section-content-container-->
+					</div>
+				</div>
+			</div>
+		</div><!-- ../section-row -->
+		
+		<div class="lp-section-row aliceblue about-gallery  lp-section-content-container popup-gallery">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 col-sm-5 about-gallery-box">
+						<a href="images/about/about1.png" class="image-popup">
+							<img src="images/about/about1.png" alt="about1" />
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 about-gallery-box">
+						<a href="images/about/about2.png" class="image-popup">
+						<img src="images/about/about2.png" alt="about2" />
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3 about-gallery-box">
+						<a href="images/about/about3.png" class="image-popup">
+						<img src="images/about/about3.png" alt="about3" />
+						</a>
+					</div>
+					<div class="col-md-7 col-sm-7 about-gallery-box">
+						<a href="images/about/about4.png" class="image-popup">
+						<img src="images/about/about4.png" alt="about4" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div><!-- ../section-row -->
+		
+		<div class="lp-section-row testimonial lp-section-content-container">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="video-thumb">
+							<div class="video-thumb">
+									<img src="images/video-img.jpg" class="lp-border-radius-5" alt="video-img" />
+								<a href="https://vimeo.com/45830194" class="overlay-video-thumb popup-vimeo">
+									<i class="fa fa-play-circle-o"></i>
+								</a>
+							</div><!-- ../video-thumb -->
+						</div><!-- ../section-content-container-->
+					</div>
+					<div class="col-md-6">
+						<div class="testimonial-inner-box">
+							<div class="testimonial-inner-box">
+								<h3 class="margin-top-0">People talking about us</h3>.
+								<div class="testimonial-description aliceblue lp-border-radius-5">
+									<p>
+										“ We have exceeded our [goals for] how many people are going to our website, staying on our website and also calling us… We’ve 
+always viewed our relationship with listingpro as an investment to keep us current in our community and to keep us relevant and our brand out there.”
+									</p>
+								</div><!-- ../testimonial-description -->
+								<div class="testimonial-user-info user-info">
+									<div class="testimonial-user-thumb user-thumb">
+										<img src="images/user-thumb-60x60.png" alt="user-thumb" />
+									</div>
+									<div class="testimonial-user-txt user-text">
+										<label class="testimonial-user-name user-name">Richard Jeans</label><br>
+										<label class="testimonial-user-position user-position">DX Media. Cortland, OH</label>
+									</div>
+								</div><!-- ../testimonial-user-info -->
+							</div><!-- ../testimonial-inner-box -->
+						</div><!-- ../section-content-container-->
+					</div>
+				</div>
+			</div>
+		</div><!-- ../section-row -->
+		
+	</section>
+	<!--==================================Section Close=================================-->
+	
+	<!--==================================Footer Open=================================-->
+	<footer class="text-center">
+		<div class="footer-upper-bar">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="footer-menu">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="blog-archive.html">Blog</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="login.html">Join Us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div><!-- ../footer-upper-bar -->
+		<div class="footer-bottom-bar">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="footer-about-company">
+							<li>Copyright © 2016 Listingpro</li>
+							<li>45 B Road NY. USA</li>
+							<li>Tel: 007-123-456</li>
+						</ul>
+						<p class="credit-links">Proudly Listingpro by <a href="http://www.takethemes.com/" target="_blank">Takethemes</a></p>
+						<ul class="social-icons footer-social-icons">
+							<li><a href="#"><!-- Facebook icon by Icons8 -->
+								<img class="icon icons8-Facebook" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAC10lEQVRoQ+1ai3HTQBTc7QAqgFQQqADoAFcAHZBUAFRAUgGkApIKCBUkqYCkA6hgmVXuPGf7ZF0snyTP6GY8ceyT7+17+z7Se0TLkvQBwFsAr8KrbesQn98C8OuS5FXuQK5/KOk9gG8AXg4h4Q5n3AM4JXmZXrsCRJIBnIQNDwDOAFyTtDZGW5LMCrPDsr0IgpyRPI1CLYFIstCfwhdG7P8ntyQZjBXudU6yUXwDJNDpZ/jy9dgW6NJesNBN2LcwzSKQP8EnJmuJjC9Hy9yTPKKkjwC+A3ggOVUHzxpJkh3fPrMwkB8AHGoPxhoRVeIvFwZirjkqTN43MvSy3Jb/1kDUeD25kVO6nG4K3y/lHwNIqBqceK3R1C+vAZj3zlu/S6LnKEBC2HSYLw0qTUTaZvnBgQQQvwA8s7YBOMi4dvqbOK+zt0H6rwNQJ+XHABKDygVJh/ytq5TygwJJKofiXDVVIE/OVVMF4mj0BsA7kn6/XJLsM58BOIptBIGutDA0tVpzVVJZZH3mkIA0IHPW6goIoXJ/VFIpF0t+tG3PtjP6nj8lavUqkaoDiQekVsrxPbdvzbLP06SZKRzrUmtfQEZ39j7cl+QSxeWMC0e/b12DUatLozkJJX0JuaWznJk6kFgJfCVpUAdrkdZK4FCd/Yikb7TGt0iP8PuPpOuwrau6j6Snz5m9yxyPT0nrJsTZIgVWyCqpTwYuPXP2kQJNzT5SoKSNLTO1CrQ2U6tASTO1eilJkh/hH9ds9NRy9qQpejdI660ikNgQbVpvflTpnkVnL2IX0/uaikBiN3oR29OxO1qlIVoDSNIIbZ7wDzIwsG8grQMDwfzpCMcJyfNdqdR6X51puD61aJXkMZM4XrI6whEPXptHMd18QVFTsui+ekcgwQJuS9i5Y+thCcJnt405GUCcwtmXYfb1O55aMmPax5zWblgczWIL2XlmzHWXDJ6tAIhC/QfJdOM+5ZDCYAAAAABJRU5ErkJggg==" alt="facebook"></a></li>
+							<li><a href="#"><!-- Google Plus icon by Icons8 -->
+								<img class="icon icons8-Google-Plus" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAEFElEQVRoQ+2a8VEVQQzGkwqUCoQKhArUCpQKhAqECoQK1AqECsQKlArUCsQKhAri/J7Jzd6+23t3B3dv/yAzzGOYPV6+TfbLl+ypFMzM9kXkrYjw+bK0bqG/fxeRnyJyqap8rpnmf3EAHypwvrRHgDrNAbWAmNkbEfksIk9F5E5ELkTkSlV5eGtmZmQEvh2JyBMRuRWRY1W9CqcaIGbGIkBglyJyoqo8UI2ZGRv80VMevw4DzAqIme2KyA+PBEiJRLWWbDobfaCqNwHkm58JDhORqd7MjLR67al/qB6N334mdmtLp9KOeprd+JnZAwg5905EPqnqSfWhSBxs+W5mMNILEXm1bXYau4nOZhyLayLy1w/52P9T0/pbgFhNHk31pQGiqmtVfuo/XfK5CMQjkCV3ve+7HiNSSyTCj3tHxMyQB8gZdBo9S8muReRsrho1GYgXIVQyMh9VgExIJTaAaH5OkdulRuihIjsJSKI6r1W11TV6Q4ZKoF/ALlT1+KEc7tFcqzo4mH4TcclznXLGzNBqdJdhs8ue0RFJZLP0FU8zI9WeOZKvqkrazWZTgDRSZgOQUNM4f6Oqe7Oh+N8UDk+tRGWGTzulvsX7/i+xcG7pc18gTa+c73YGeo0UHjo6o4Dw5ZlKLrbEGZBzVT0b4nyuwodGcgoQBhIM7MJo+teGZQlFU2cGt85LAmEUEz1yFD3otRkZeR/NNGaHYcaYYrgYEE8v5AjTi+ceFkCshnhJdf/D74xohqRUrFkUSPKl1AYqOxqLSAUwlnSm3CZQWwGSOjWFbqe2110EMPqwl3Y0G7WyjAEzRbFotQLh3MBeIRYB0CsYqwNiZszDMCKQ9ySAa7Fa6WBvOj99KmFSarkCppZw2HEchgp2ir4kjUwRTIciaI2l5iyI7+n03IFzT58WxXpPAh2nLDaoui/CWmZGRxhT+l569aJIg9XUGlWlQPba7EAyVho06HYwpFX0JXubCuQSQLhygJmwwR1ftgEbi+QSQNJDOAYIlZ9J+Z2qUv1nscGsZWboqWCiQQcXj5P+fdZbsBTIytES3ZlZKt9ZS1Q677qTOkEEiAZt7mApPzZkfha5FrljitJ70ZNdcfFdgIGG2em1W19vrJikAGKUlJ8AJNJ3ddGz8erN6wPropIHICITd/AUyJg6LnK9nV+94QDNELsLTRbv1n23qSc8kxY9KnyA4gWDUb3I2Ej4GSR9YVQ+D+J6OtJrkengFMc7JE0U6dWAI31hIBQsA2ckSLVmZiGXmAvsNy8MeKgQgjGPgqnoK2p8hQMiCbnUfoUjoU3AACJeXIl+/Ne2QDlrch5j4h8v/Bx1vlSTgIF5AJAyVE1pxn0LIFqEUrzJdcoNhoKl0j5jSWCcA84vP5BRZzH+B8zg25A0mqpxAAAAAElFTkSuQmCC" alt="google-plus"></a></li>
+							<li><a href="#"><!-- LinkedIn icon by Icons8 -->
+								<img class="icon icons8-LinkedIn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAADv0lEQVRoQ+1a7VEbMRTcrSDpIFBBoIKQCoIrSKggUEGggkAFgQogFYRUELuCQAUJFbzMnp8uurNOJxv7Ds9YM/6B0fm02vf2fUhExzCzjwCOABz4p2vqEN9PAehzT/Im9UK2vzSzYwBfAewNscIV3vEA4IzkXfxsA4iZCcCpT5gBuPZd0G6MNsxMViHr+ATgrS/kkuRZWFQNxMwuAXwG8ATgnKT+fnHDzLTR5wBeAbgiWW18BcTN6dZBHJEclYG+3XOGfvm8icwsAPntPiHbe5FMJHxZTMgVHkju08xkd98AzEjKFrdmmJksRz4zERA5tKR2a9gIO+3+IlZuBES2JiYOu3zDY4qoDIxpJ6QaSU0fitLIV6YCYpXXkwsxxYVAZifzS41rkidDLTz1nnr9OSARdZJkMRKCkIKmREESeEJS5jnKKAUSzK6SuHilkUhMSR6OgmIeOuYW1cNIp9mZ2WsAf3JmOQS4UiB/3Xz2SSrHqYeZKRdT/HkiKVCjjFIgQZrvSE5aQJQJyFduSHaJwcbBlQLRrktq5dRiJHZ2/U8icNBma+Orb1pGv4+4/Cp2CMCb1gIfxcjYeVkRIy1TUhqtj4aUqqFiQ7LQWlc/I1HUz62z8p8l52pDPkQVqH5fwiIz1gZ9LzXXIkbCpL7dVlZQOtcXKpHIDYFSCnTR9+6lgGTSlzrOFKQ61VwfEgllBmKzqn08LokpgVQSW5kwgPckBSw5xgSiElrFW25xEph7V8sF6V/FR/oSymUYCVVnFkRYpAfcIP2d+dzgjPTZeur/UT5XVYEdc4pUa22MRDv9xcsCBVQFWWUPaiIkTc3MNEcxbCFxdd8aHkhGojud2szUMRH4umMyto+EZkGdEbgfKG6o7r4gqUU3hplJyX4A+EkyBOR6zuA+ErHRcNyoFZWsa6JyIeknYwDJ1TbFvphgbFgfWbWAazh0oq+wYySpGFGuVZLOdJpHdyen3yzXRXlprpUCupZnd0DiVszOtObesjOtdTTo2ju5ll3dqdYzWqY7RnJpxjNNKxxfLRz0lHZGlumi5AJiXxXZfjY66Jllj97MTA2Adz0vUA/qeJm5iRSl+D2tFCnUONXRWzgMHfWco4+Njnr9//mNO22oi7fmQDQ6TXskude+MKAGgBpi23lhwFkJVzgERlc4rlahe9PPmJmumYRLDc0rHFGrJoDRV2JFrRoV/aMy5Ook0ZE/hyPyRlel65qTALXPQza92aW/ry7MafaaU0vahD5cPAtXi0pftu556heHi2fJo/B/rbIkXGKb1eoAAAAASUVORK5CYII=" alt="linkedin"></a></li>
+							<li><a href="#"><!-- Instagram icon by Icons8 -->
+								<img class="icon icons8-Instagram" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAFNUlEQVRoQ9WagVUUQQyGkwqUCpQKlArUCoQKxAqUCoQKhAqECsQK1AqECtQKxAri+8ZkzQ67d3vL3HHOe/dg7/Z25k/+JP9kTmVkmNkrEXkuIk/9NXbrJt6/EhFel6r6aWhCrd80s30ReS8ijzexwhlz/BCRI1W9zN/tATEzALz1G36KyKmIfFFVrHFvw8xgBexgbY98IaeqehSL6oCYGYt+4x+AmOutG2YGGAzOOFPVYvgCxOn00T/cu28PLLOee+ib33cAzQLId4+JrfGEmT0UkQ8iQszmQWy8FpFD98wPVd1VM+MNvvBTVbcmwM3ss8fFkIM+qeq+mRH4xMwBQM5FhFS7Nd5wupsj2FHVG38PL/0qMaHK2iNeLriAa2SFrYoNMytAWHB2SX4/xcoVQAa/sCzg1v35FCDZc82BuJWgKl6GCvxlUIugCH8vlmXGACIio9RaCxAze+eZZGrCIFDPVfVkyLtm9kVEno14vgR7UyBmRsUl6wUAFAEpktdNWN49hYdYAK+o0AB6raosvBuefklELyswaK3DlAD+hsZdYqSSNF9F5Lhe0FgsuQGOk9XfqurZqrHXrX8uEDPDC9QgRi91mxlWxOp4KccI1u8p2EpyQDWK3eQxCiSl4ykP+82Cwwsu/dFoUGjRIOjxwIXzHHpCxQdTJnUh+2JhjKRsMeWZLwDhfKYSh/WhGfy+qmKEz/FiBDEZjGfcONV4xqQR9WWRR0brii+YAgplCp0qENdu6V7g1ivzReO5J56OA0xUaihIgS4VPY86FOYCIThJs19VFTqgnEMZAOL50ORDJnYDALiAUdU9f16k3RNVZb61AAmVHJQKYCuBiJVVYMrCE8WKqm0OJO1Zikr2RQCMwC7AJpH7toXxLLEBjXY9Xv6p2mpLe2dqpR1k2ZUl+d/RbA6Qik4UxvN6rqYxkiRD0Ip0Sb0ok88F4UBiTxT7jPDSLSO18Aj7AGhU5H5L+d+T46p76RqJs9PaI720PFcRjHlu1NIL9iOTCuKiDU3vAdVEcym2SSBUYXJ+UKt3PReAG4WKTz26VtWniVrlujW1olD998EeDbw6/dKJLAJu7kgdk42k33B/qbheEClcKNYWBREl/dgLYiiIWw2RO6df5zLVt1u4mYVE6VTsKl6pBGctUQb7bK2AxMILnWrhF5J8CphaNUdQp/q0PtHoXgkdlGV8UAzP8P4UGU8jGrpmSoWMH+16NvGIA2ELGw3vvLEKSc5t/I9sIX2WIwlPqaRv5EjZAvB5SP9qY1Ua00OebQbEFxUUI2aYNHaJWJTXsi0rXiALcsYRu0OMgwQapFSAagrEwUTPmMuuA+Lcj5YPO0m8ENYvzQdvQEQ/lzOZOIuhcRcNjcFQaw6k8kzQCWtO2pc4lSJO+P5CT6zNI+nBWB+L5oZbNOh+VzEC5bK3eAwNPTw6GBO1W9bikTyJ15Qp8RFfK3EytC9flL7XDiR5KFo+0cTOMRJNbBpxsw5YVwbi+2eCc2uGmZE8kC/duUluB9XyPLawW3WC5cklCmZsif/J//roLTUVoAEFbxYFWrvRCyrdFmpNqOTe0VtU6q6PlBoNgKH4YYF7oZnTiSYH6wBEPhsJlXwQx9ND+gmKjR20tDb41Od1ZyOpi1902cIfDDjN8Fh92DJ14lb3AYDjiNJ2Gv3BgH+Yf8Ix69Cl1aqX1JEsafo/4Ug1IIOBblzTJLvXgHcPQHOCO474OhAlHQ9IgFpybMLQq8wxKGluAak0FKDI1VGdV5mw5b3sW+KHZ4Oa7A8mMc1cZlo+UAAAAABJRU5ErkJggg==" alt="instagram"></a></li>
+							<li><a href="#"><!-- Tumblr icon by Icons8 -->
+								<img class="icon icons8-Tumblr" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAADeUlEQVRoQ+2ajXHTQBCF91UAVACpAKgAOgBXQFIBSQWECkgqIKkgSQWECnAqIKmApIJlPs2d5uScrL8jthndjMdjSzrtu919tz8naxnu/snM3pvZm/Bpu/Up/l+aGZ9LSVe5F2r1T3f/aGbfzOzVU0g44h23ZnYk6TJ9tgHE3QFwGG64M7MTM7uWxGpsbLg7VoF1INvLIMiJpKMoVA3E3RH6c7gAYn5v3XB3wLDgjFNJ1cJXQII5XYSLbzetga7VCxr6Fe5bYGYRyO/gE1uriYwvR83cStqTu++b2Xczu5O0rQ6eVZK74/j4zAIgZ2YG1e6MNiKqxF/OAYKtwQqTfcPdj83sS2b5aqfssv8h1xNfWQLEK6+XHu0pQyYNpPHHzJ7nnisxf27eWv5SQNwdAAB5kFSDKTV/26L+CyBEBFD4T0lsXtXYRSBZ0tgpIInTPbAfSbrfOY0E34D52IO+SoK56rETGnF3hMcvoO8bSXw3xtYDCfkKgSUMdUN0mprUqmmtofIzSQdDqf6R6Q5dseAPRJ+RmUh09nMgAmtdm9m7dYJO2WNG06+7xwCTfOVYEmw1agxdxKIbYomXl2S0KRopGdJMnmsGEldgxV6pbixabPhHQgxZX9qUs6e5fS1YmzAtwFNA55JI7kaN0aY1dMMrSQ5FWWsGUiBxmzXSx/u6fKDrep93rLtndvbZ2WdnX+9Fs4+M8BF6K6+r+uxKcyYkXiRotDMIVRrNmz6MVlIjUdBsyTWpz1JZoYJO4Zlcn/yeWlgsnN9LetFH+PSekkBYxQ9mdtCWLSaF8pycZJpVF2pMFFwSSOxTXElihbMjNJOiBtAKH8L/5ZRNsySQWPMFwJ4kBBw0tgJIcNhYLm1NsHqFGSP2mmIaCUBwWJz+mZn1rlO5O4xFP4XvRhW/r0pTIGtZZ8CECIPjAwbzonRK9bFubbs79S1MkXvjYQReQc2Y2tgg+k1qzjdFW29hYoSJvfCudYCxMEt65nXhu+uheH219Rb7GlV3tO8kHTZPDs68rDoaioPSKtqKxzEmHURIioWL2J6O3dGdaYgm2qi60f/XgYHAPGmZ51DSaQkzKz2HuxOXxeMlzSMcifOkYDA3ftMTnGTLU8EEEoHxiCJibNZoebcdcwJAX+aZKufQ52E6LKb9mFM6YxIbEaUShm9ywHaR6bJ7zV8Cie0+55PMmQAAAABJRU5ErkJggg==" alt="tumblr"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div><!-- ../footer-bottom-bar -->
+	</footer>
+	<a href="post-submit.html" class="add-listing-mobile lp-search-btn">Add listing</a>
+</div>
+	<!--==================================Footer Close=================================-->
+	
+	
+	
+	<!--==================================Javscript=================================-->
+
+
+		<script type="text/javascript" src="js/jquery-lib.js"></script><!-- Jquery Library -->
+		<script type="text/javascript" src="js/jquery-migrate-1.3.0.min.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript" src='js/mapbox.js'></script>
+		<script type="text/javascript" src='js/leaflet.markercluster.js'></script>
+		<script type="text/javascript" src="js/build.min.js"></script>
+		<script type="text/javascript" src="lib/chosen/chosen.jquery.js" ></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="lib/slick/slick.min.js"></script>
+		<script type="text/javascript" src="lib/jquerym.menu/js/jquery.mmenu.min.all.js"></script>
+		<script type="text/javascript" src="lib/Magnific-Popup-master/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="lib/jQuery.filer-master/js/jquery.filer.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap-rating.js"></script>
+		<script type="text/javascript" src="lib/popup/js/classie.js"></script> <!-- Popup -->
+		<script type="text/javascript" src="lib/popup/js/modalEffects.js"></script> <!-- Popup -->
+		<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
